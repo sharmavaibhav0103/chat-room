@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://i.postimg.cc/442qY2vv/iconfinder-messages-16-171351.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Chat App</title>
+    <style>
+        body{
+           background-color: #00bfa5;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+        } 
+        img{
+            width: 250px;
+            height: 250px;
+            margin-top: -100px;
+        }
+        input,button,select,option{
+            border: none;
+            outline: 0;
+            border-radius: 3px;
+            padding: 10px 20px;
+        }
+        button:hover{
+            transform: scale(1.001);
+        }
+        form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 60vw;
+        }
+        form > *{
+            margin: 10px;
+        }
+        footer{
+            position: absolute;
+            bottom: 11;
+            right: 11;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://whatsappbrand.com/wp-content/themes/whatsapp-brc/images/hero.png" alt="">
+    <form action="/chat.html">
+        <label for="userName">User Name</label>
+        <input type="text" name='userName'id="userName" required>
+        <label for="room">Select Room</label>
+        <select id="room" name="room">
+            <option name="room" value="Doon University">Doon University</option>
+            <option name="room" value="Random">Random</option>
+          </select>
+          
+        <button type="submit">Submit</button>
+    </form>
+    <footer>Created by - Vaibhav Sharma</footer>
+</body>
+</html>

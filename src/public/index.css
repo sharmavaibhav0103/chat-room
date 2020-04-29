@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+#chat-sidebar{
+    background-color: #435A64;
+    width: 200px;
+    height: 100%;
+}
+.chat-box{
+    background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+}
+.chat-box > #messages{
+    flex: 1;
+}
+.chat-box > form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 10px 10px;
+}
+.msg-box{
+    outline: 0;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0px 10px 10px;
+    flex: 0.9;
+}
+#share-location-btn, .send-button{
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+#share-location-btn:hover,.send-button:hover{
+    transform: scale(0.9);
+}
+header{
+    height: 7%;
+    width: 100%;
+    background: #075E54;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header > h2{
+    flex: 1;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+header > h3{
+    color: darkgray;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-right: 10px;
+    align-self: flex-end;
+}
+.fa-comments{
+    font-size: 35px;
+    color: white;
+    padding-left: 15px;
+}
+#messages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: scroll;
+}
+#messages::-webkit-scrollbar{
+    display: none;
+}
+.message-box{
+    background-color: white;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    /**min-width: 200px;**/
+}
+.message-content{
+    display: flex;
+    flex-direction: column;
+}
+.message-content > span{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.time{
+    font-size: 9px;
+    color: black;
+    padding: 3px;
+}
+.message{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.username{
+    font-size:11px;
+    font-weight: bold;
+    padding-left: 15px;
+    color: darkolivegreen;
+}
+
+#room-title{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+#users-list{
+    color: white;
+}
+
+@media (max-width: 412px){
+    #chat-sidebar{
+        display: none;
+    }
+}
